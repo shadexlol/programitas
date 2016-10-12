@@ -1,3 +1,7 @@
+git add doc
+
+
+
 #define h 0.83333
 #define g 1.12
 #include <stdio.h>
