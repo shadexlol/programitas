@@ -34,8 +34,8 @@ int main (void)
 
 
 
-	/* Tercero: dependiendo de cuáles hayan sido los resultados, imprime
-	   en pantalla la nota final, o el mensaje NO APTO, según corresponda */
+	/* Tercero: dependiendo de cuÃ¡les hayan sido los resultados, imprime
+	   en pantalla la nota final, o el mensaje NO APTO, segÃºn corresponda */
 
 
 
@@ -47,12 +47,12 @@ int main (void)
 /* Cuerpo de la funcion "calificar" */
 float calificar (float, float, float, float, float, float)
 {
-	/* Pon aquí las variables que necesites en esta función */
+	/* Pon aquÃ­ las variables que necesites en esta funciÃ³n */
 	
 	
 	
 	
-	/* Y a partir de aquí, el código */
+	/* Y a partir de aquÃ­, el cÃ³digo */
 	
 	
 	
