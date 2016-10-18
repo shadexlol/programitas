@@ -10,7 +10,7 @@ int main()
 	scanf("%f",&a);
 	
 	printf ("el valor del seno es: %f \n", sin(a));
-	printf ("entonces el valor del arsen es; %f \n", asin(sin(a)));break;
+	printf ("entonces el valor del arsen es; %f \n", asin(sin(a)));
 	
 	return 0;
 	
