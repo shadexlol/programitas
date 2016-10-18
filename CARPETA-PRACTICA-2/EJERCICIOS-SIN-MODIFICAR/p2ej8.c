@@ -9,7 +9,7 @@ int main()
 	// Da un valor a x del cual quieras saber su raiz cuadrada
 	x =
 	
-	// Completa esta línea usando pow() para calcular la raiz cuadrada de x
+	// Completa esta lÃ­nea usando pow() para calcular la raiz cuadrada de x
 	tu_resultado =
 	
 	// Yo calculo ahora la raiz cuadrada para que compares con tu resultado
