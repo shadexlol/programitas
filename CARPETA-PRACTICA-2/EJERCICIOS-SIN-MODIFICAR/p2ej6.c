@@ -1,4 +1,4 @@
-void incrementa (int);
+int incrementa (int);
 
 int main()
 {
@@ -9,11 +9,11 @@ int main()
 	incrementa(a);
 	incrementa(a);
 
-	// cu·nto vale "a" al final?
+	// cu√°nto vale "a" al final?
 	return 0;
 }
 
-void incrementa (int n)
+int incrementa (int n)
 {
 	n = n + 1;
 	return;
