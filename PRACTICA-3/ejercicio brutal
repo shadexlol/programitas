@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+/* Prototipo de la funcion "calificar" */
+float calificar (float, float, float, float, float, float);
+
+int main (void)
+{
+	float p1,p2,t1,t2,t3,t4;
+	
+	printf ("las notas de practica \n");
+	printf("p1    "); scanf("%f",&p1);
+	printf("p2    "); scanf("%f",&p2);
+	
+	printf ("las notas de teoria \n");
+	printf("t1   ");scanf("%f",&t1);
+	printf("t2   ");scanf("%f",&t2);
+	printf("t3   ");scanf("%f",&t3);
+	printf("t4   ");scanf("%f",&t4);
+	
+	calificar(p1,p2,t1,t2,t3,t4);
+	   
+	   
+	
+	return 0;	
+}
+
+/* Cuerpo de la funcion "calificar" */
+float calificar (float, float, float, float, float, float)
+{
+	float t1,t2,t3,t4,p1,p2;
+	
+	if (p1+p2>=1.5 && t1+t2+t3+t4>=1.5){		
+	
+	return printf("ESTA ES TU NOTA %f",t1+t2+t3+t4+p1+p2);
+	}
+	
+	
+		
+}
