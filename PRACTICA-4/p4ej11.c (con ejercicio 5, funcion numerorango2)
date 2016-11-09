@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int numerorango (int);
+int numerorango2 (int);
+
+int main()
+{
+	int n,b,z;
+	printf("introdusca un numero etnre 0 y 9\n");
+ 	scanf("%d",&b);
+	n = numerorango(b);
+	printf ("El numero introducido es %d\n", n);
+	
+	
+	printf ("ahora la funcion numero 2\n");
+	printf("dame un valor, tendra que estar comprendido entre 6 y 666 ");
+	scanf("%d",&z);
+	numerorango2(z);
+	return 0;
+}
+
+int numerorango (int h)
+{
+	int i,res;
+ 
+		for (i=0 ; i<=9 && res!=h ; i=i+1){
+			if (h<i || h>9){
+				printf("dame otro cabron\n \t");
+				fflush(stdin);
+				scanf("%d",&h);
+			}
+			else {
+			
+				res = h;
+			}
+			
+		}
+	return res;	
+}
+
+int numerorango2 (int k){
+	
+	int superior;
+	superior=0;
+	
+			while (!superior){
+			if (k>=6 && k<=666) {
+				return printf("ENORAWENA, TU NUMERO POFIN ES EL WENO XD",k);
+				superior = 1;
+			}
+			
+			else {
+				printf ("dame otro numero \n");
+				scanf("%d",&k);
+				superior = 0;
+			}
+			}
+}
