@@ -8,6 +8,13 @@ struct p3d
   double x,y,z;
 };
 
+struct p3d leerpunto (){
+	struct p3d aux;
+	printf ("escriba las cordenadas x, y z, separadas por espacio;");
+	scanf("%lf%lf%lf",&aux.x,&aux.y,&aux.z);
+	return aux;
+}
+
 
 /* Prototipo de la función calcula la longitud entre dos puntos/vértices 
    en elespacio:  */
@@ -21,6 +28,7 @@ int main()
 	struct p3d p2 = {1, 1, 1};
 	
 	p1 = leerpunto();
+	p2 = leerpunto();
 	
 	/* Los puntos 'p1' y 'p2' también se podría haber  pedir por teclado. */
 	distancia = long_lado (p1, p2);
@@ -46,11 +54,4 @@ double long_lado (struct p3d punto1, struct p3d punto2){
 	
 return sqrt(pow(difx,2)+pow(dify,2)+pow(difz,2));
 	
-}
-
-struct p3d leerpunto (){
-	struct p3d aux;
-	printf ("escriba las cordenadas x, y z, separadas por espacio;");
-	scanf("%lf%lf%lf%",&aux.x,&aux.y,&aux.z);
-	return aux;
 }
