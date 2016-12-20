@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 void printvector    (float v[], int n);            /* Para el ejercicio 1 */
-float pescalar      (float x[], float y[], int n); /* Para el ejercicio 2 */
-int perpendiculares (float x[], float y[], int n); /* Para el ejercicio 7 */
 
 int main()
 {
@@ -13,16 +11,21 @@ int main()
 	
 	/* Aquí vienen las llamadas a funciones según
 	dicte cada ejercicio */
-	
-	
-	
-	
-	
-	
-	
+	printvector(a, 3);
+	printvector(b, 3);
+	printvector(c, 5);
+	printvector(d, 5);
+				
 	return 0;	
 }
 
 /* A partir de aquí vienen las implementaciones de
    las funciones, según dicte cada ejercicio */
-
+void printvector (float v[], int n) {
+	int i;
+	for (i=0;i<n;i++)
+	{
+		printf("%f ", v[i]);
+	}
+	printf("\n");
+}

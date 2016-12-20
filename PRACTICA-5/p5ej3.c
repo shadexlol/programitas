@@ -11,11 +11,10 @@ int main()
 	gets(mensaje);
 	for(i=0;i<strlen(mensaje);i++)
 	{
-		if( 'a'<=mensaje[i] && mensaje[i]<='z' ) 
-			mensaje[i]=mensaje[i]-32;
-		printf("%c",mensaje[i]);
+		if( 'e'==mensaje[i] || 'E'==mensaje[i] ) 
+			cont++;
 	}
-	printf("\n");
+	printf ("\nEn este mensaje aparence %d veces la letra e.\n",cont);
 	
 	return 0;
 }
