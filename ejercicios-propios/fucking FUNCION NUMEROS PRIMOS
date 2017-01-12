@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int es_primo (short int num);
+
+int main ()
+{	short int a;
+a=0;
+	printf("dame numbers!\n");
+	scanf("%d",&a);
+	es_primo(a);
+	
+	return 0;
+}
+
+
+int es_primo(short int num){
+	
+	short int i,a;
+	a=0;
+	
+		for (i=1;i<=num;i++){
+			if (num%i==0){
+				a++;
+			}
+		}
+		if (a==2 || a==1){
+			printf("ES PRIMO LOKO");
+			return 1;
+			
+		}
+		else {
+			printf("NO ES PRMO PARGEL");
+			return 0;
+		}
+		
+}
